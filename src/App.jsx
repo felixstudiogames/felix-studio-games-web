@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import PrivacyPolicy from './pages/PrivacyPolicy'
@@ -27,28 +27,30 @@ const App = () => {
 
   return (
     <>
-      <Navbar
-        onGamesClick={handleGamesClick}
-        onPrivacyClick={handlePrivacyClick}
-        onContactClick={handleContactClick}
-      />
-    
-        <Routes>
-          <Route
-            path='/'
-            element={
-              <Home 
-                highlightGames={highlightGames}
-                highlightPrivacy={highlightPrivacy}
-                highlightContact={highlightContact}
-                gamesRef={gamesRef}
-                privacyRef={privacyRef}
-                contactRef={contactRef}
-              />
-            }
-          />
-          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-        </Routes>
+      <HashRouter>
+        <Navbar
+          onGamesClick={handleGamesClick}
+          onPrivacyClick={handlePrivacyClick}
+          onContactClick={handleContactClick}
+        />
+      
+          <Routes>
+            <Route
+              path='/'
+              element={
+                <Home 
+                  highlightGames={highlightGames}
+                  highlightPrivacy={highlightPrivacy}
+                  highlightContact={highlightContact}
+                  gamesRef={gamesRef}
+                  privacyRef={privacyRef}
+                  contactRef={contactRef}
+                />
+              }
+            />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          </Routes>
+      </HashRouter>
       
     </>
   )
