@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+    height: 100vh;
+    background: #faf6ec;
+    color: #41445D;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased;
+    overflow-y: scroll;
+}
