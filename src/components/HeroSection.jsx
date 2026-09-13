@@ -29,33 +29,33 @@ const HeroSection = ({
 
       {/* Top row: Welcome + Featured Games (3-col grid, 2+1 split) */}
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
-        <div className='lg:col-span-2 h-auto lg:h-[440px] bg-[#41445D] rounded-3xl p-8 md:p-10 flex flex-col md:flex-row justify-between gap-6'>
+        <div className='lg:col-span-2 h-auto lg:h-[440px] bg-[#41445D] rounded-3xl p-6 md:p-10 flex flex-col md:flex-row justify-between gap-6'>
           <div className='text-white flex-1'>
             <h2 className='text-3xl md:text-4xl font-medium mb-1'>Welcome To</h2>
             <h1 className='text-3xl md:text-5xl font-extrabold mb-5'>Felix Studio Games</h1>
-            <p className='text-sm md:text-base opacity-90 mb-4 leading-relaxed'>
-              Felix Studio Games is comprised of a global team of over 10 seasoned professionals, all united by a shared passion and dedication to mobile game creation.
+            <p className='text-base font-bold opacity-90 mb-4 lg:mr-15 leading-relaxed'>
+              Felix Studio Games is a passionate mobile game development studio, crafting polished, high-quality experiences that bring creative ideas to life for players everywhere.
             </p>
-            <p className='text-sm md:text-base opacity-90 leading-relaxed'>
-              We create games for mobile platforms like Google Play and App Store. Our games have high engagement time, long-term retention, and a growing userbase.
+            <p className='text-base opacity-90 lg:mr-15 leading-relaxed'>
+              At Felix Studio Games, every project is built with care, creativity, and attention to detail. The studio is dedicated to designing fun, addictive mobile games that stand out in a crowded market. From concept to launch, Felix Studio Games focuses on quality and innovation, constantly refining its craft to deliver engaging, memorable experiences with every new release.
             </p>
           </div>
           <img
             src={Characters}
             alt='hero illustration'
-            className='w-[220px] md:w-[280px] rounded-2xl'
+            className='w-[180px] md:w-[280px] rounded-2xl'
           />
         </div>
 
-        <div ref={gamesRef} className={`h-auto lg:h-[440px] bg-[#FFFDF5] rounded-3xl p-8 shadow-sm border flex flex-col transition-all duration-500 ${
+        <div ref={gamesRef} className={`h-auto lg:h-[440px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex flex-col transition-all duration-500 ${
             highlightGames
               ? 'border-[#41445D] ring-4 ring-[#41445D]/30 scale-[1.02]'
               : 'border-gray-100'
           }`}>
           <h2 className='text-2xl md:text-3xl font-extrabold text-[#41445D] leading-tight mb-1'>Checkout</h2>
           <h2 className='text-2xl md:text-3xl font-extrabold text-[#41445D] leading-tight mb-4'>Our Featured Games</h2>
-          <p className='text-[16px] text-gray-500 mb-6 leading-relaxed'>
-            We create games for mobile platforms like Google Play and App Store. We focus on long-term sustainability and profitability rather than short-term gains!
+          <p className='text-[16px] text-gray-500 mb-6 md:pr-10 leading-relaxed'>
+            We creates games for mobile platforms worldwide, focused on delivering quality experiences that players will enjoy for years to come.
           </p>
 
           <div className='lg:flex items-center gap-4 mt-auto'>
@@ -82,7 +82,7 @@ const HeroSection = ({
       {/* Bottom row: Privacy Policy + Contact Us (own 2-col grid, full width) */}
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
         <div ref={privacyRef}
-          className={`h-auto sm:h-[300px] bg-[#FFFDF5] rounded-3xl p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightPrivacy)}`}>
+          className={`h-auto sm:h-[300px] md:h-[320px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightPrivacy)}`}>
           <div>
             <h2 className='text-3xl font-extrabold text-[#41445D] mb-4'>Privacy Policy</h2>
             <p className='text-[16px] text-gray-600 mb-3 leading-relaxed'>
@@ -93,13 +93,13 @@ const HeroSection = ({
             </p>
             <Link to='/privacy-policy' className='text-sm font-semibold text-[#41445D] underline'>Read More</Link>
           </div>
-          <div className='hidden sm:flex flex-shrink-0 w-[148.78px] h-[170.45] mt-[30px]'>
+          <div className='hidden md:hidden lg:block sm:flex flex-shrink-0 lg:w-[148.78px] mt-[30px]'>
             <img src={ShieldIcon} alt="Shield" />
           </div>
         </div>
 
         <div ref={contactRef}
-          className={`h-auto sm:h-[300px] bg-[#FFFDF5] rounded-3xl p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightContact)}`}>
+          className={`h-auto sm:h-[300px] md:h-[320px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightContact)}`}>
           <div className='flex-1'>
             <h2 className='text-3xl font-extrabold text-[#41445D] mb-4'>Contact Us</h2>
             <p className='text-[16] text-gray-600 mb-4'>
@@ -117,7 +117,7 @@ const HeroSection = ({
             </div>
             <p className='text-[14px] text-gray-400'>* Get a response within 24 hrs</p>
           </div>
-          <div className='hidden sm:flex flex-shrink-0 w-[155px] h-[153px] ml-[30px] mt-[50px]'>
+          <div className='hidden md:hidden lg:block sm:flex flex-shrink-0 lg:w-[155px] lg:h-[153px] ml-[30px] mt-[50px]'>
             <img src={ContactIcon} alt="Contact" />
           </div>
         </div>

@@ -52,13 +52,12 @@ const PrivacyPolicyContentSection = () => {
             {/* Content */}
             <article className="max-w-[720px] text-[15.5px] leading-[1.7] text-[#4b4b45] [&_p]:m-0 [&_p]:mb-[18px] [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-[#4a4a45] [&_h2]:mt-9 [&_h2]:mb-[14px] [&_h3]:text-base [&_h3]:font-bold [&_h3]:text-[#4a4a45] [&_h3]:mt-6 [&_h3]:mb-[6px] [&_ul]:m-0 [&_ul]:mb-[18px] [&_ul]:pl-5 [&_li]:mb-[6px] [&_strong]:text-[#4a4a45] [&_strong]:font-bold [&_a]:text-[#ff5a1f] [&_a]:no-underline [&_a:hover]:underline [&_ul]:list-disc [&_ul]:pl-5">
               <p>
-                Welcome to <strong>Call Break Master</strong>. This Privacy
-                Policy explains how <strong>Felix Studio Games</strong>{" "}
+                This Privacy Policy explains how <strong>Felix Studio Games</strong>{" "}
                 collects, uses, and shares information when you use our mobile
                 game.
               </p>
               <p>
-                By using <strong>Call Break Master</strong>, you agree to the
+                By using our applications, you agree to the
                 collection and use of information in accordance with this
                 policy.
               </p>
@@ -81,7 +80,7 @@ const PrivacyPolicyContentSection = () => {
 
               <h2>Third-Party Services</h2>
               <p>
-                Our game uses third-party services that may collect
+                Our game applications uses third-party services that may collect
                 information used to identify you.
               </p>
 
@@ -132,7 +131,7 @@ const PrivacyPolicyContentSection = () => {
               </ul>
 
               <h2>Children's Privacy</h2>
-              <p>This game is intended for users aged 13 and above.</p>
+              <p>Our games are intended for users aged 13 and above.</p>
               <p>
                 We do not knowingly collect personal information from children
                 under 13. Since our app does not require account registration,
@@ -159,7 +158,7 @@ const PrivacyPolicyContentSection = () => {
                 in the game, such as Google AdMob and Firebase.
               </p>
               <p>
-                Since Call Break Master does not require user accounts or
+                Since our applications do not require user accounts or
                 directly store personally identifiable information, we do not
                 provide an in-app mechanism for requesting data deletion.
               </p>
