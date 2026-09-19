@@ -82,7 +82,7 @@ const HeroSection = ({
       {/* Bottom row: Privacy Policy + Contact Us (own 2-col grid, full width) */}
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
         <div ref={privacyRef}
-          className={`h-auto sm:h-[300px] md:h-[320px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightPrivacy)}`}>
+          className={`h-auto sm:h-[300px] md:h-[300px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightPrivacy)}`}>
           <div>
             <h2 className='text-3xl font-extrabold text-[#41445D] mb-4'>Privacy Policy</h2>
             <p className='text-[16px] text-gray-600 mb-3 leading-relaxed'>
@@ -93,13 +93,13 @@ const HeroSection = ({
             </p>
             <Link to='/privacy-policy' className='text-sm font-semibold text-[#41445D] underline'>Read More</Link>
           </div>
-          <div className='hidden md:hidden lg:block sm:flex flex-shrink-0 lg:w-[148.78px] mt-[30px]'>
+          <div className='hidden md:hidden lg:block sm:flex flex-shrink-0 lg:w-[138.78px] mt-[50px]'>
             <img src={ShieldIcon} alt="Shield" />
           </div>
         </div>
 
         <div ref={contactRef}
-          className={`h-auto sm:h-[300px] md:h-[320px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightContact)}`}>
+          className={`h-auto sm:h-[300px] md:h-[300px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightContact)}`}>
           <div className='flex-1'>
             <h2 className='text-3xl font-extrabold text-[#41445D] mb-4'>Contact Us</h2>
             <p className='text-[16] text-gray-600 mb-4'>
