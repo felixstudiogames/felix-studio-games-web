@@ -49,7 +49,7 @@ const Navbar = ({ onGamesClick, onPrivacyClick, onContactClick }) => {
 
         {/* Mobile dropdown menu */}
         {!isPrivacyPolicyPage && menuOpen && (
-          <ul className='lg:hidden flex flex-col list-none gap-4 p-5 m-0 text-[18px] bg-inherit'>
+          <ul className='lg:hidden flex flex-col list-none gap-4 p-5 m-0 text-[18px] bg-inherit shadow-sm'>
             <li>Home</li>
             <li onClick={() => handleClick(onGamesClick)}>Games</li>
             <li onClick={() => handleClick(onPrivacyClick)}>Privacy Policy</li>
