@@ -131,10 +131,10 @@ const PrivacyPolicyContentSection = () => {
               </ul>
 
               <h2>Children's Privacy</h2>
-              <p>Our games are intended for users aged 13 and above.</p>
+              <p>Our games are intended for users aged 18 and above.</p>
               <p>
                 We do not knowingly collect personal information from children
-                under 13. Since our app does not require account registration,
+                under 18. Since our app does not require account registration,
                 we do not directly store personal data.
               </p>
               <p>
