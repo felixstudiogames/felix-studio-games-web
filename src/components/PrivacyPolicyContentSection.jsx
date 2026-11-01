@@ -44,6 +44,10 @@ const PrivacyPolicyContentSection = () => {
                 <p className="m-0 text-[#6b6b64] text-[15px]">5th May, 2026</p>
               </div>
               <div>
+                <p className="m-0 mb-1 font-bold text-[#4a4a45] text-[15px]">Last Updated:</p>
+                <p className="m-0 text-[#6b6b64] text-[15px]">31st October, 2026</p>
+              </div>
+              <div>
                 <p className="m-0 mb-1 font-bold text-[#4a4a45] text-[15px]">Developer:</p>
                 <p className="m-0 text-[#6b6b64] text-[15px]">Felix Studio Games</p>
               </div>
