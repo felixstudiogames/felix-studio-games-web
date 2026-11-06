@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Home from './pages/Home'
+import NotFound from './pages/NotFound' // Add this import
 
 const App = () => {
 
@@ -48,6 +49,7 @@ const App = () => {
               }
             />
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
       </BrowserRouter>
       
