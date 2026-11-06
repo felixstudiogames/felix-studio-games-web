@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react'
-import { Routes, Route, HashRouter } from 'react-router-dom'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Home from './pages/Home'
 
@@ -27,7 +26,7 @@ const App = () => {
 
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Navbar
           onGamesClick={handleGamesClick}
           onPrivacyClick={handlePrivacyClick}
@@ -50,7 +49,7 @@ const App = () => {
             />
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           </Routes>
-      </HashRouter>
+      </BrowserRouter>
       
     </>
   )
