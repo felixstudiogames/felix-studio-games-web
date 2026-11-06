@@ -7,6 +7,8 @@ const Navbar = ({ onGamesClick, onPrivacyClick, onContactClick }) => {
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
   const isPrivacyPolicyPage = location.pathname === '/privacy-policy'
+  const isCallBreakMasterPage = location.pathname === '/call-break-master'
+  const isCallBreakMasterPrivacyPolicyPage = location.pathname === '/call-break-master/privacy-policy'
 
   const handleClick = (fn) => {
     fn()
@@ -24,7 +26,7 @@ const Navbar = ({ onGamesClick, onPrivacyClick, onContactClick }) => {
           </div>
 
           {/* Desktop menu */}
-          {!isPrivacyPolicyPage && (
+          {!isPrivacyPolicyPage && !isCallBreakMasterPage && !isCallBreakMasterPrivacyPolicyPage && (
             <ul className='hidden lg:flex absolute left-1/2 -translate-x-1/2 list-none gap-[60px] p-0 m-0 text-[20px] pointer'>
               <li><Link to={'/'}>Home</Link></li>
               <li className='cursor-pointer' onClick={() => handleClick(onGamesClick)}>Games</li>

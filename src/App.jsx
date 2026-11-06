@@ -3,6 +3,8 @@ import { Routes, Route, HashRouter } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Home from './pages/Home'
+// import CallBreakMaster from './pages/CallBreakMaster'
+// import CallBreakMasterPrivacyPolicy from './pages/CallBreakMasterPrivacyPolicy'
 
 const App = () => {
 
@@ -48,6 +50,8 @@ const App = () => {
               }
             />
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            {/* <Route path='/call-break-master' element={<CallBreakMaster />} /> */}
+            {/* <Route path='/call-break-master/privacy-policy' element={<CallBreakMasterPrivacyPolicy />} /> */}
           </Routes>
       </HashRouter>
       

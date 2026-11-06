@@ -59,11 +59,13 @@ const HeroSection = ({
           </p>
 
           <div className='lg:flex items-center gap-4 mt-auto'>
-            <img
-              src={GameLogo}
-              alt='featured game'
-              className='w-[170px] h-[170px] rounded-xl flex-shrink-1 md:mb-1'
-            />
+            <Link to='/call-break-master' className='flex-shrink-0'>
+              <img
+                src={GameLogo}
+                alt='featured game'
+                className='w-[170px] h-[170px] cursor-pointer rounded-xl flex-shrink-1 md:mb-1'
+              />
+            </Link>
             <div>
               <div className='lg:mt-0 mt-2'>
                 <h3 className='font-bold text-[#41445D] lg:mb-1 text-[24px]'>Call Break Master</h3>
