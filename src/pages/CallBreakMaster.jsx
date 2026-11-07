@@ -17,23 +17,21 @@ function Logo({ className }) {
 }
 
 const features = [
-  'Classic Call Break gameplay',
-  'Play offline anytime, anywhere',
-  'Smooth and responsive controls',
-  'Virtual coin rewards and bonuses',
-  'Earn extra rewards through rewarded ads',
-  'Clean and attractive card visuals',
-  'Optimized and lightweight performance',
-  'Strategic trick-taking gameplay',
+  'Classic Call Break trick-taking card mechanics',
+  '100% offline gameplay against smart AI opponents',
+  'Smooth, responsive controls and clean visuals',
+  'Virtual coin scoring system and match achievements',
+  'Optimized and lightweight game performance',
+  'Strategic single-player trick-taking modes',
 ]
 
 const rules = [
-  { title: 'Objective:', text: 'Win tricks according to your bid and finish the game with the highest score. Missing your bid results in penalties.' },
-  { title: 'Bidding:', text: 'Choose how many tricks (1–8) you expect to win in a round. Higher bids offer greater rewards but also higher risk.' },
+  { text: 'Win tricks according to your target call estimate and finish the match with the highest overall score. Missing your target call results in score deductions.' },
+  { title: 'Call Selection:', text: 'Select how many tricks (1–8) you estimate to win in a round. Higher calls offer greater score potential but require sharper card management.' },
   { title: 'Gameplay:', items: ['Players must follow the leading suit if possible', 'The highest card of the leading suit wins the trick', 'The winner of a trick leads the next round'] },
-  { title: 'Trump Rules:', items: ['Spades are the trump suit', 'If you do not have the leading suit, you may play a trump card', 'If no trump is available, any card may be played'] },
-  { title: 'Over Trump Rule:', text: 'If another player has already used a trump card, you must play a higher trump card if possible.' },
-  { title: 'Scoring:', items: ['Exact bid: 3/3 → Score: 3', 'Extra tricks: 4/3 → Score: 3.1', 'Missed bid: 2/3 → Score: -3'] },
+  { title: 'Trump Rules:', items: ['Spades are the trump suit', 'If you do not have the leading suit, you may play a spade trump card', 'If no trump is available, any card may be played'] },
+  { title: 'Over Trump Rule:', text: 'If an opponent has already played a spade trump card, you must play a higher spade card if available in your hand.' },
+  { title: 'Scoring:', items: ['Exact call: 3/3 → Score: 3', 'Extra tricks: 4/3 → Score: 3.1', 'Missed call: 2/3 → Score: -3'] },
   { title: 'Winner:', text: 'After 4 rounds, the player with the highest total score wins the match.' },
 ]
 
@@ -75,10 +73,10 @@ const CallBreakMaster = () => {
         <div className={`${cardClass} order-2 lg:order-1 p-8 md:p-10 text-gray-600 leading-relaxed`}>
           <h2 className='text-3xl md:text-4xl font-extrabold text-[#41445D] mb-4'>About the game</h2>
           <p className='mb-5'>
-            Enjoy the classic Call Break card game offline with smooth gameplay, exciting challenges, rewarding progression, and competitive strategy. Whether you are a beginner or an experienced player, Call Break Master delivers an engaging and enjoyable card gaming experience anytime, anywhere.
+            Enjoy the classic Call Break card game 100% offline with smooth performance, AI challenges, score progression, and competitive strategy. Whether you are a beginner or an experienced player, Call Break Master delivers a fun, strategic card gaming experience anytime, anywhere.
           </p>
           <p className='mb-8'>
-            It is completely offline and free to play. There is no real-money, no cash betting and no cash rewards involved.
+            Call Break Master is completely free-to-play and designed strictly for offline entertainment using in-game points and virtual score counters.
           </p>
 
           <h3 className='text-xl font-bold text-[#41445D] mb-3'>Features</h3>
@@ -88,7 +86,7 @@ const CallBreakMaster = () => {
 
           <h3 className='text-xl font-bold text-[#41445D] mb-3'>How to Play</h3>
           <p className='mb-8'>
-            Call Break is a strategic trick-taking card game played using a standard 52-card deck. Players bid the number of tricks they expect to win each round. Use smart strategy, timing, and trump cards wisely to defeat opponents and become the Call Break Master.
+            Call Break is a strategic trick-taking card game played using a standard 52-card deck. Players estimate (call) the number of tricks they plan to win each round. Use smart strategy, timing, and trump cards wisely to outplay opponents and become the Call Break Master.
           </p>
 
           <h3 className='text-xl font-bold text-[#41445D] mb-4'>Game Rules</h3>
@@ -107,7 +105,10 @@ const CallBreakMaster = () => {
           </div>
 
           <p className='mt-5'>
-            Challenge yourself, improve your strategy, and enjoy endless card battles in Call Break Master. Download now and start playing today!
+            Challenge yourself and enjoy endless offline card matches in Call Break Master. <br></br>Download now and start playing today!
+          </p>
+          <p className='mt-5'>
+            Disclaimer: Call Break Master is an offline single-player card game intended for casual entertainment. The game uses strictly virtual coins and point counters for in-game scoring and level progression.
           </p>
         </div>
 
