@@ -36,7 +36,7 @@ const Navbar = ({ onGamesClick, onPrivacyClick, onContactClick }) => {
           )}
 
           {/* Hamburger icon - mobile/tablet only */}
-          {!isPrivacyPolicyPage && (
+          {!isPrivacyPolicyPage && !isCallBreakMasterPage && !isCallBreakMasterPrivacyPolicyPage && (
             <button
               className='lg:hidden'
               onClick={() => setMenuOpen(!menuOpen)}
