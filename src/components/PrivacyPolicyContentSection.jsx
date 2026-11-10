@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import logo from "./../assets/logo-02.svg";
 import characters from "./../assets/characters.svg";
+import Breadcrumb from './BreadCrumbs';
 
 function Logo({ className }) {
   return (
@@ -17,8 +18,9 @@ function Logo({ className }) {
 
 const PrivacyPolicyContentSection = () => {
   return (
-    <section className='px-5 pt-40 md:px-10 lg:px-[140px] lg:py-16'>
-      <div className="min-h-screen flex flex-col bg-[#faf6ec] text-[#3d3d3d] antialiased">
+    <section className='px-5 py-30 pb-10 md:px-10 lg:px-[140px] lg:pt-[30px]'>
+      <Breadcrumb items={[{ label: 'Home', to: '/' }, { label: 'Privacy Policy' }]} />
+      <div className="py-8 md:p-10 min-h-screen flex flex-col bg-[#faf6ec] text-[#3d3d3d] antialiased">
         {/* Main */}
         <main className="flex-1 max-w-[1200px] w-full mx-auto px-0 py-0 pb-24 md:pb-0">
           {/* Hero */}
