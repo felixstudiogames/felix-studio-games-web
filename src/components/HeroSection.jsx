@@ -29,7 +29,7 @@ const HeroSection = ({
 
       {/* Top row: Welcome + Featured Games (3-col grid, 2+1 split) */}
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
-        <div className='lg:col-span-2 h-auto lg:h-[440px] bg-[#41445D] rounded-3xl p-6 md:p-10 flex flex-col md:flex-row justify-between gap-6'>
+        <div className='lg:col-span-2 h-auto lg:min-h-[440px] bg-[#41445D] rounded-3xl p-6 md:p-10 flex flex-col md:flex-row justify-between gap-6'>
           <div className='text-white flex-1'>
             <h2 className='text-3xl md:text-4xl font-medium mb-1'>Welcome To</h2>
             <h1 className='text-3xl md:text-5xl font-extrabold mb-5'>Felix Studio Games</h1>
@@ -47,7 +47,7 @@ const HeroSection = ({
           />
         </div>
 
-        <div ref={gamesRef} className={`h-auto lg:h-[440px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex flex-col transition-all duration-500 ${
+        <div ref={gamesRef} className={`h-auto lg:min-h-[440px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex flex-col transition-all duration-500 ${
             highlightGames
               ? 'border-[#41445D] ring-4 ring-[#41445D]/30 scale-[1.02]'
               : 'border-gray-100'
@@ -73,7 +73,7 @@ const HeroSection = ({
                   Play the classic Call Break and master strategic card gameplay experience.
                 </p>
               </div>
-              <a href={playStoreLink} className='flex gap-2 text-xs py-2'>
+              <a href={playStoreLink} target='_blank' rel='noopener noreferrer' className='flex gap-2 text-xs py-2'>
                 <img src={PlayStoreLogo} alt="PlayStore" />
               </a>
             </div>
@@ -84,7 +84,7 @@ const HeroSection = ({
       {/* Bottom row: Privacy Policy + Contact Us (own 2-col grid, full width) */}
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
         <div ref={privacyRef}
-          className={`h-auto sm:h-[300px] md:h-[300px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightPrivacy)}`}>
+          className={`h-auto sm:min-h-[300px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightPrivacy)}`}>
           <div>
             <h2 className='text-3xl font-extrabold text-[#41445D] mb-4'>Privacy Policy</h2>
             <p className='text-[16px] text-gray-600 mb-3 leading-relaxed'>
@@ -101,7 +101,7 @@ const HeroSection = ({
         </div>
 
         <div ref={contactRef}
-          className={`h-auto sm:h-[300px] md:h-[300px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightContact)}`}>
+          className={`h-auto sm:min-h-[300px] bg-[#FFFDF5] rounded-3xl p-6 md:p-8 shadow-sm border flex justify-between gap-6 ${highlightClasses(highlightContact)}`}>
           <div className='flex-1'>
             <h2 className='text-3xl font-extrabold text-[#41445D] mb-4'>Contact Us</h2>
             <p className='text-[16] text-gray-600 mb-4'>
