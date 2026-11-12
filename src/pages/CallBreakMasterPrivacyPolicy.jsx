@@ -32,7 +32,7 @@ const CallBreakMasterPrivacyPolicy = () => {
         {/* Main */}
         <main className="flex-1 max-w-[1200px] w-full mx-auto px-0 py-0 pb-0 md:pb-0">
           {/* Hero */}
-          <div className="relative mb-24">
+          <div className="relative mb-12 md:mb-24">
             <div className="w-20 h-[5px] bg-[#4a4a45] mb-[5px]" />
             <h1 className="text-[32px] md:text-[44px] font-bold text-[#4a4a45] m-0 tracking-[-0.01em]">
               Privacy Policy
@@ -46,20 +46,20 @@ const CallBreakMasterPrivacyPolicy = () => {
           </div>
 
           {/* Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-12 pt-0 md:pt-[100px]">
+          <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-12 pt-0 md:pt-[50px]">
             {/* Sidebar */}
-            <aside className="flex flex-row md:flex-col gap-10 md:gap-7 mb-2 md:mb-0">
+            <aside className="flex flex-row flex-wrap md:flex-col gap-x-8 gap-y-5 md:gap-7 mb-0 md:mb-0">
               <div>
-                <p className="m-0 mb-1 font-bold text-[#4a4a45] text-[15px]">Effective Date:</p>
-                <p className="m-0 text-[#6b6b64] text-[15px]">5th May, 2026</p>
+                <p className="m-0 mb-1 font-bold text-[#4a4a45] text-[15px] whitespace-nowrap">Effective Date:</p>
+                <p className="m-0 text-[#6b6b64] text-[15px] whitespace-nowrap">5th May, 2026</p>
               </div>
               <div>
-                <p className="m-0 mb-1 font-bold text-[#4a4a45] text-[15px]">Last Updated:</p>
-                <p className="m-0 text-[#6b6b64] text-[15px]">31st October, 2026</p>
+                <p className="m-0 mb-1 font-bold text-[#4a4a45] text-[15px] whitespace-nowrap">Last Updated:</p>
+                <p className="m-0 text-[#6b6b64] text-[15px] whitespace-nowrap">31st October, 2026</p>
               </div>
               <div>
-                <p className="m-0 mb-1 font-bold text-[#4a4a45] text-[15px]">Developer:</p>
-                <p className="m-0 text-[#6b6b64] text-[15px]">Felix Studio Games</p>
+                <p className="m-0 mb-1 font-bold text-[#4a4a45] text-[15px] whitespace-nowrap">Developer:</p>
+                <p className="m-0 text-[#6b6b64] text-[15px] whitespace-nowrap">Felix Studio Games</p>
               </div>
             </aside>
 

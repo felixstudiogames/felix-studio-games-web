@@ -13,11 +13,11 @@ function Logo({ className }) {
   );
 }
 
-const linkClass = 'px-8 text-[18px] text-[#41445D] hover:text-[#ff5a1f] transition-colors'
+const linkClass = 'px-4 sm:px-8 text-[15px] sm:text-[18px] text-[#41445D] hover:text-[#ff5a1f] transition-colors'
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center gap-8 pt-10 border-t border-[#e4ddc9] mt-[120px]">
+    <footer className="flex flex-col items-center gap-6 lg:gap-8 pt-10 border-t border-[#e4ddc9] mt-16 lg:mt-[120px]">
       <Logo className="!h-[52px]" />
 
       <nav aria-label="Footer">
