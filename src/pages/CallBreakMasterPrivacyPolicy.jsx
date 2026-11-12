@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "./../assets/logo-02.svg";
 import characters from "./../assets/characters.svg";
 import Breadcrumb from '../components/BreadCrumbs';
+import Footer from '../components/Footer';
 
 function Logo({ className }) {
   return (
@@ -29,7 +30,7 @@ const CallBreakMasterPrivacyPolicy = () => {
       <Breadcrumb items={breadcrumbItems} />
       <div className="py-8 md:p-10 min-h-screen flex flex-col bg-[#faf6ec] text-[#3d3d3d] antialiased">
         {/* Main */}
-        <main className="flex-1 max-w-[1200px] w-full mx-auto px-0 py-0 pb-24 md:pb-0">
+        <main className="flex-1 max-w-[1200px] w-full mx-auto px-0 py-0 pb-0 md:pb-0">
           {/* Hero */}
           <div className="relative mb-24">
             <div className="w-20 h-[5px] bg-[#4a4a45] mb-[5px]" />
@@ -197,9 +198,10 @@ const CallBreakMasterPrivacyPolicy = () => {
             </article>
           </div>
           {/* Footer */}
-          <footer className="hidden lg:flex justify-center pt-10 md:px-16 border-t border-[#e4ddc9] mt-[140px]">
+          {/* <footer className="hidden lg:flex justify-center pt-10 md:px-16 border-t border-[#e4ddc9] mt-[140px]">
             <Logo className="!h-[52px]" />
-          </footer>
+          </footer> */}
+          <Footer />
         </main>
       </div>
     </section>

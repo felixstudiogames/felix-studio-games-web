@@ -1,10 +1,11 @@
-import React, { useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 import { Routes, Route, HashRouter } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Home from './pages/Home'
 import CallBreakMaster from './pages/CallBreakMaster'
 import CallBreakMasterPrivacyPolicy from './pages/CallBreakMasterPrivacyPolicy'
+import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
 
@@ -29,6 +30,7 @@ const App = () => {
   return (
     <>
       <HashRouter>
+        <ScrollToTop />
         <Navbar
           onGamesClick={handleGamesClick}
           onPrivacyClick={handlePrivacyClick}
@@ -46,6 +48,7 @@ const App = () => {
                   gamesRef={gamesRef}
                   privacyRef={privacyRef}
                   contactRef={contactRef}
+                  onContactClick={handleContactClick}
                 />
               }
             />

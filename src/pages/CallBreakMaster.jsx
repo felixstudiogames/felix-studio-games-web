@@ -1,21 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from "./../assets/logo-02.svg";
 import PlayStoreLogo from './../assets/playstore.svg'
 import Banner from './../assets/feature-graphic.svg'
 import Breadcrumb from './../components/BreadCrumbs'
-
-function Logo({ className }) {
-  return (
-    <Link to={'/'}>
-      <img
-        src={logo}
-        alt="Felix Studio Games"
-        className={`block h-11 w-auto ${className || ""}`}
-      />
-    </Link>
-  );
-}
+import VideoPreview from '../components/VideoPreview';
+import Footer from '../components/Footer';
 
 const features = [
   'Classic Call Break gameplay',
@@ -48,7 +37,7 @@ const cardClass = 'bg-[#FFFDF5] rounded-3xl border border-gray-100 shadow-sm'
 
 const CallBreakMaster = () => {
   return (
-    <section className='px-5 py-30 pb-10 md:px-10 lg:px-[140px] lg:pt-[30px] flex flex-col gap-6 text-[#41445D]'>
+    <section className='px-5 py-30 pb-20 md:px-10 lg:px-[140px] lg:pt-[30px] flex flex-col gap-6 text-[#41445D]'>
       <Breadcrumb items={[{ label: 'Home', to: '/' }, { label: 'Call Break Master' }]} />
       {/* Hero card */}
       <div className={`${cardClass} overflow-hidden grid grid-cols-1 lg:grid-cols-[2fr_3fr]`}>
@@ -115,42 +104,55 @@ const CallBreakMaster = () => {
         </div>
 
         {/* Info card */}
-        <aside className={`${cardClass} order-1 lg:order-2 p-8`}>
-          {info.map((item) => (
-            <div key={item.label} className='border-b border-gray-200 pb-6 mb-6'>
-              <h3 className='text-xl font-bold mb-1'>{item.label}</h3>
-              {item.to ? (
-                <Link
-                  to={item.to}
-                  className='text-sm text-[#41445D] font-semibold underline hover:text-[#ff5a1f] transition-colors'
-                >
-                  {item.value}
-                </Link>
-              ) : (
-                <p className='text-sm text-gray-500'>{item.value}</p>
-              )}
-            </div>
-          ))}
+        {/* Right column: Info + Preview */}
+        <div className='order-1 lg:order-2 flex flex-col gap-6'>
 
-          <h3 className='text-xl font-bold mb-1'>Call Break Master</h3>
-          <p className='text-sm text-gray-500 mb-4'>
-            Play the classic Call Break and master strategic card gameplay experience.
-          </p>
-          <a
-            href='https://play.google.com/store/apps/details?id=com.felixstudiogames.callbreakmaster'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='inline-block'
-          >
-            <img src={PlayStoreLogo} alt='Get it on Google Play' />
-          </a>
-        </aside>
+          {/* Info card */}
+          <aside className={`${cardClass} p-8`}>
+            {info.map((item) => (
+              <div key={item.label} className='border-b border-gray-200 pb-6 mb-6'>
+                <h3 className='text-xl font-bold mb-1'>{item.label}</h3>
+                {item.to ? (
+                  <Link
+                    to={item.to}
+                    className='text-sm text-[#41445D] font-semibold underline hover:text-[#ff5a1f] transition-colors'
+                  >
+                    {item.value}
+                  </Link>
+                ) : (
+                  <p className='text-sm text-gray-500'>{item.value}</p>
+                )}
+              </div>
+            ))}
 
+            <h3 className='text-xl font-bold mb-1'>Call Break Master</h3>
+            <p className='text-sm text-gray-500 mb-4'>
+              Play the classic Call Break and master strategic card gameplay experience.
+            </p>
+            <a
+              href='https://play.google.com/store/apps/details?id=com.felixstudiogames.callbreakmaster'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-block'
+            >
+              <img src={PlayStoreLogo} alt='Get it on Google Play' />
+            </a>
+          </aside>
+
+          {/* Preview card */}
+          <div className={`${cardClass} p-6 md:p-8`}>
+            <h2 className='text-3xl font-extrabold text-[#41445D] mb-4'>Preview</h2>
+            <VideoPreview
+              url='https://youtu.be/etcuK7vJqM0'
+              title='Call Break Master promo video'
+            />
+          </div>
+
+        </div>
       </div>
+
       {/* Footer */}
-        <footer className="hidden lg:flex justify-center pt-10 md:px-16 border-t border-[#e4ddc9] mt-[120px]">
-            <Logo className="!h-[52px]" />
-        </footer>
+        <Footer />
     </section>
   )
 }
