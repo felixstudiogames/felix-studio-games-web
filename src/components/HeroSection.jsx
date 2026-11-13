@@ -68,7 +68,9 @@ const HeroSection = ({
             </Link>
             <div>
               <div className='lg:mt-0 mt-2'>
-                <h3 className='font-bold text-[#41445D] lg:mb-1 text-[24px]'>Call Break Master</h3>
+                <Link to='/call-break-master'>
+                  <h3 className='font-bold text-[#41445D] hover:text-[#ff5a1f] cursor-pointer lg:mb-1 text-[24px]'>Call Break Master</h3>
+                </Link>
                 <p className='text-[14px] text-gray-500 mb-3 leading-relaxed'>
                   Play the classic Call Break and master strategic card gameplay experience.
                 </p>
@@ -93,7 +95,7 @@ const HeroSection = ({
             <p className='text-[16px] text-gray-600 mb-4 leading-relaxed'>
               By using our product, you agree to the collection and use of information in accordance with this policy.
             </p>
-            <Link to='/privacy-policy' className='text-sm font-semibold text-[#41445D] underline'>Read More</Link>
+            <Link to='/privacy-policy' className='text-sm font-semibold text-[#41445D] hover:text-[#ff5a1f] underline'>Read More</Link>
           </div>
           <div className='hidden md:hidden lg:block sm:flex flex-shrink-0 lg:w-[138.78px] mt-[50px]'>
             <img src={ShieldIcon} alt="Shield" />

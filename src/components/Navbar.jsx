@@ -28,10 +28,10 @@ const Navbar = ({ onGamesClick, onPrivacyClick, onContactClick }) => {
           {/* Desktop menu */}
           {!isPrivacyPolicyPage && !isCallBreakMasterPage && !isCallBreakMasterPrivacyPolicyPage && (
             <ul className='hidden lg:flex absolute left-1/2 -translate-x-1/2 list-none gap-[60px] p-0 m-0 text-[20px] pointer'>
-              <li><Link to={'/'}>Home</Link></li>
-              <li className='cursor-pointer' onClick={() => handleClick(onGamesClick)}>Games</li>
-              <li className='cursor-pointer' onClick={() => handleClick(onPrivacyClick)}>Privacy Policy</li>
-              <li className='cursor-pointer' onClick={() => handleClick(onContactClick)}>Contact Us</li>
+              <li className='hover:text-[#ff5a1f] hover:underline'><Link to={'/'}>Home</Link></li>
+              <li className='hover:text-[#ff5a1f] hover:underline cursor-pointer' onClick={() => handleClick(onGamesClick)}>Games</li>
+              <li className='hover:text-[#ff5a1f] hover:underline cursor-pointer' onClick={() => handleClick(onPrivacyClick)}>Privacy Policy</li>
+              <li className='hover:text-[#ff5a1f] hover:underline cursor-pointer' onClick={() => handleClick(onContactClick)}>Contact Us</li>
             </ul>
           )}
 

@@ -13,7 +13,7 @@ function Logo({ className }) {
   );
 }
 
-const linkClass = 'px-4 sm:px-8 text-[15px] sm:text-[18px] text-[#41445D] hover:text-[#ff5a1f] transition-colors'
+const linkClass = 'px-4 sm:px-8 text-[15px] sm:text-[18px] text-[#41445D] hover:text-[#ff5a1f] hover:underline transition-colors'
 
 const Footer = () => {
   return (
